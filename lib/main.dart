@@ -1,6 +1,19 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
 
-void main() {
+import 'package:flutter/material.dart';
+import 'package:flutter_webview/src/webview.dart';
+import 'package:webview_flutter/webview_flutter.dart';
+import 'package:firebase_core/firebase_core.dart';
+
+import 'firebase_options.dart';
+import 'src/menu.dart';
+import 'src/navigation_controls.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(
     MaterialApp(
       title: 'Flutter Demo',
@@ -19,10 +32,17 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller =
+        Completer<WebViewController>(); // Instantiate the controller
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter Demo Home Page'),
+        title: const Text('Flutter WebView'),
+        actions: [
+          NavigationControls(controller: controller),
+          Menu(controller: controller),
+        ],
       ),
+      body: WebViewWidget(controller: controller),
     );
   }
 }

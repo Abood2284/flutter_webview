@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "24176289309",
+    "project_id": "studentshub-265110",
+    "storage_bucket": "studentshub-265110.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24176289309:android:1d8c61d03e2097afb088f4",
+        "android_client_info": {
+          "package_name": "com.example.flutter_webview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24176289309-b1tabhdtvg901kq8p1do9hfmksa1769v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvSFNFwtaO9Jl9-qgAifK1JK4wQiPMnY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24176289309-b1tabhdtvg901kq8p1do9hfmksa1769v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24176289309:android:33f3315a98aca704b088f4",
+        "android_client_info": {
+          "package_name": "webviewgold.studentshub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24176289309-b1tabhdtvg901kq8p1do9hfmksa1769v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvSFNFwtaO9Jl9-qgAifK1JK4wQiPMnY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24176289309-b1tabhdtvg901kq8p1do9hfmksa1769v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
